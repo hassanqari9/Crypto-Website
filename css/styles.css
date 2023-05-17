@@ -263,6 +263,13 @@ nav{
 #three img{
     border-radius: 10px;
     margin: 0 10px;
+    width: 300px;
+}
+.left-side-img{
+    transform: translateX(-800px);
+}
+.right-side-img{
+    transform: translateX(800px);
 }
 @media screen and (max-width:1000px) {
     #three .div1{
