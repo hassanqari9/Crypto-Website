@@ -14,6 +14,7 @@ bouncers = document.querySelectorAll(".bounce")
 window.addEventListener("scroll", scrollClick)
 function scrollClick(){
     const triggerBottom = window.innerHeight / 5 * 4;
+    
     steps.forEach(step => {
         const stepTop = step.getBoundingClientRect().top;
         if (stepTop < triggerBottom){
@@ -51,7 +52,6 @@ function scrollClick(){
     else{
         leftside.classList.remove("slide-right")
     } 
-    
     const rightsideTop = rightside.getBoundingClientRect().top;
     if (rightsideTop < triggerBottom){
         rightside.classList.add("slide-left")
