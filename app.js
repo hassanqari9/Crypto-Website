@@ -31,7 +31,7 @@ function scrollClick(){
             leftsideimg.classList.add("slide-right")
         }
         else{
-            leftsideimgs.classList.remove("slide-right")
+            leftsideimg.classList.remove("slide-right")
         }      
     });
     rightsideimgs.forEach(rightsideimg => {
@@ -40,7 +40,7 @@ function scrollClick(){
             rightsideimg.classList.add("slide-left")
         }
         else{
-            rightsideimgs.classList.remove("slide-left")
+            rightsideimg.classList.remove("slide-left")
         }      
     });
 
@@ -50,7 +50,7 @@ function scrollClick(){
             bouncer.classList.add("bounce-top")
         }
         else{
-            rightsideimgs.classList.remove("bounce-top")
+            rightsideimg.classList.remove("bounce-top")
         }      
     });
 
@@ -80,7 +80,6 @@ valueDisplays.forEach((valueDisplay) => {
     let endValue = parseInt(valueDisplay.getAttribute("data"));
 
     let duration = Math.floor(interval/endValue)
-    console.log(duration);
     let counter = setInterval(function() {
         startValue += 1;
         valueDisplay.textContent = startValue;
