@@ -2,9 +2,7 @@ body{
     margin: 0;
     background-color: var(--orange);
 }
-
 /* ...........................................zero............................................ */
-
 #zero{
     background-color: var(--orange);
     padding: 10px 0px;
@@ -81,12 +79,9 @@ nav{
     #zero button{
         display: block;
         z-index: 2;
-    }
-    
+    } 
 }
-
 /* ...........................................one............................................ */
-
 #one{
     position: relative;
     z-index: 0;
@@ -182,10 +177,7 @@ nav{
         scale: 0.9;
     }
 }
-
-
 /* ...........................................two............................................ */
-
 #two{
     background-color: var(--orange);
     position: relative;
@@ -229,7 +221,6 @@ nav{
     height: 100px;
     padding: 30px 0;
 }
-
 @media screen and (max-width:1000px) {
     #two .div2{
         flex-direction: column;
@@ -249,9 +240,7 @@ nav{
         width: 15%;
     }
 }
-
 /* ...........................................three............................................ */
-
 #three .div1{
     background-color: var(--dark);
     color: var(--textlight);
@@ -305,13 +294,10 @@ nav{
         margin: 20px
     }
 }
-
 /* ...........................................four............................................ */
-
 #four{
     background-color: var(--orange);
 }
-
 #four h1{
     position: relative;
 }
@@ -374,9 +360,7 @@ nav{
         width: 18%;
     }
 }
-
 /* ...........................................five............................................ */
-
 #five{
     background-color: var(--peach);
 }
@@ -417,6 +401,5 @@ nav{
         align-items: center;
         font-size: 10px;
         padding:  5px 10px 5px 10px;
-        
-        }
+    }
 }

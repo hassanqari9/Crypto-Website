@@ -1,3 +1,4 @@
+// animations
 document.querySelector("button").addEventListener("click", handleClick) 
 function handleClick(){
     document.querySelector(".navlinks").classList.toggle("marginadd")
@@ -70,7 +71,7 @@ function scrollClick(){
 }
 
 
-
+// counting animation
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 3000;
 
