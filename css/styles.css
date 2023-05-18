@@ -94,9 +94,7 @@ nav{
     color: transparent;
     -webkit-text-stroke: 1px black;
 }
-#one span{
-    font-size: 60px;
-}
+
 #one p{
     padding-bottom: 30px;
 }
@@ -106,10 +104,6 @@ nav{
     padding-top: 100px;
     position: relative;
     z-index: -1;
-}
-#one .heading{
-    padding-top: 100px;
-    font-size: 70px;
 }
 #one img{
     width: 600px;
