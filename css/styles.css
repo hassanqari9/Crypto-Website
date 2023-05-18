@@ -349,7 +349,7 @@ nav{
     color: var(--textlight);
 
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1100px) {
     #four h1{
         font-size: 45px;
     }
@@ -366,6 +366,12 @@ nav{
     
 }
 @media screen and (max-width:700px) {
+    #four button{
+        font-size: 10px;
+    }
+    #four .div2{
+        padding: 0 20px 80px 20px;
+    }
     #four h1:before{
         width: 15%;
     }
