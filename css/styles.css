@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    /* font-family: var(--font1); */
     background-color: var(--orange);
 }
 
@@ -213,7 +212,7 @@ nav{
     padding-bottom: 100px;
 }
 .stepsdiv{
-    margin: 20px;
+    transform: rotateY(180deg);
     background-color: var(--peach);
     padding: 20px 20px;
     border-radius: 10px;
@@ -271,14 +270,20 @@ nav{
 .left-side-img{
     transform: translateX(-800px);
 }
-.right-side-img{
+.right-side-img1{
+    transform: translateX(800px);
+}
+.right-side-img2{
     transform: translateX(800px);
 }
 @media screen and (max-width:1000px) {
     .left-side-img{
         flex-direction: column;
     }
-    .right-side-img{
+    .right-side-img1{
+        flex-direction: column;
+    }
+    .right-side-img2{
         flex-direction: column;
     }
     #three .div1{
@@ -335,8 +340,9 @@ nav{
     padding: 0 50px 50px 50px;
 }
 #four button{
+    color: var(--dark);
     background-color: var(--peach);
-    border: 2px solid;
+    border: 2px solid var(--dark);
 }
 #four button:hover{
     background-color: var(--orange);
@@ -377,7 +383,7 @@ nav{
 #five img{
     width: 400px;
 }
-#five div1{
+#five .div1{
     overflow: hidden;
 }
 .footer{

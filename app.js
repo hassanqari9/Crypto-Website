@@ -5,7 +5,8 @@ function handleClick(){
 
 steps = document.querySelectorAll(".stepsdiv")
 leftsideimgs = document.querySelectorAll(".left-side-img")
-rightsideimgs = document.querySelectorAll(".right-side-img")
+rightsideimgs1 = document.querySelectorAll(".right-side-img1")
+rightsideimgs2 = document.querySelectorAll(".right-side-img2")
 leftside = document.querySelector(".left-side")
 rightside = document.querySelector(".right-side")
 bouncers = document.querySelectorAll(".bounce")
@@ -14,7 +15,7 @@ bouncers = document.querySelectorAll(".bounce")
 window.addEventListener("scroll", scrollClick)
 function scrollClick(){
     const triggerBottom = window.innerHeight / 5 * 4;
-    
+
     steps.forEach(step => {
         const stepTop = step.getBoundingClientRect().top;
         if (stepTop < triggerBottom){
@@ -34,14 +35,32 @@ function scrollClick(){
             leftsideimgs.classList.remove("slide-right")
         }      
     });
-    
-    rightsideimgs.forEach(rightsideimg => {
-        const rightsideimgTop = rightsideimg.getBoundingClientRect().top;
-        if (rightsideimgTop < triggerBottom){
-            rightsideimg.classList.add("slide-left")
+    rightsideimgs1.forEach(rightsideimg1 => {
+        const rightsideimg1Top = rightsideimg1.getBoundingClientRect().top;
+        if (rightsideimg1Top < triggerBottom){
+            rightsideimg1.classList.add("slide-left")
         }
         else{
             rightsideimgs.classList.remove("slide-left")
+        }      
+    });
+    rightsideimgs2.forEach(rightsideimg2 => {
+        const rightsideimg2Top = rightsideimg2.getBoundingClientRect().top;
+        if (rightsideimg2Top < triggerBottom){
+            rightsideimg2.classList.add("slide-left")
+        }
+        else{
+            rightsideimgs.classList.remove("slide-left")
+        }      
+    });
+
+    bouncers.forEach(bouncer => {
+        const bouncerTop = bouncer.getBoundingClientRect().top;
+        if (bouncerTop < triggerBottom){
+            bouncer.classList.add("bounce-top")
+        }
+        else{
+            rightsideimgs.classList.remove("bounce-top")
         }      
     });
 
@@ -58,16 +77,5 @@ function scrollClick(){
     }
     else{
         rightside.classList.remove("slide-left")
-    } 
-
-    bouncers.forEach(bouncer => {
-        const bouncerTop = bouncer.getBoundingClientRect().top;
-        if (bouncerTop < triggerBottom){
-            bouncer.classList.add("bounce-top")
-        }
-        else{
-            rightsideimgs.classList.remove("bounce-top")
-        }      
-    });
-    
+    }     
 }
