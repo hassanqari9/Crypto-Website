@@ -50,7 +50,7 @@ function scrollClick(){
             bouncer.classList.add("bounce-top")
         }
         else{
-            rightsideimg.classList.remove("bounce-top")
+            bouncer.classList.remove("bounce-top")
         }      
     });
 
