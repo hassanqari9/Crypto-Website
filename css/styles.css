@@ -411,7 +411,7 @@ nav{
 /* ...........................................five............................................ */
 #five{
     background-color: var(--peach);
-    padding: 50px 35px 2%;
+    padding: 50px 35px 1%;
 }
 #five img{
     width: 420px;
