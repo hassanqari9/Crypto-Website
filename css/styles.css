@@ -414,7 +414,7 @@ nav{
     padding: 50px 35px 1%;
 }
 #five img{
-    width: 420px;
+    width: 600px;
 }
 #five .div1{
     overflow: hidden;
@@ -428,6 +428,7 @@ nav{
 }
 .left-side{
     transform: translateX(-800px);
+    font-size: 20px;
 }
 .right-side{
     transform: translateX(800px);
