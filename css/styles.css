@@ -235,8 +235,8 @@ nav{
 @media screen and (max-width:1200px) {
     #two .stepsdiv{
         margin: 0 0 20px;
-        width: 900px;
-        height: 400px;
+        width: 90%;
+        height: 90%;
     }
     
     #two .div2{
@@ -253,8 +253,6 @@ nav{
 @media screen and (max-width:600px) {
     #two .stepsdiv{
         margin: 0 0 20px;
-        width: 400px;
-        height: 400px;
     }
     #two .div2{
         flex-direction: column;
