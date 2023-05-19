@@ -3,6 +3,12 @@ document.querySelector("button").addEventListener("click", handleClick)
 function handleClick(){
     document.querySelector(".navlinks").classList.toggle("marginadd")
 }
+for (var i=0; i<4; i++) {
+document.querySelectorAll("a")[i].addEventListener("click", handleClick2) 
+function handleClick2(){
+        document.querySelector(".navlinks").classList.remove("marginadd")
+}
+}
 
 steps = document.querySelectorAll(".stepsdiv")
 leftsideimgs = document.querySelectorAll(".left-side-img")
